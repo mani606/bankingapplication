@@ -1,0 +1,15 @@
+header {
+    background: #fff;
+    padding: 15px;
+    text-align: right;
+    font-size: 14px;
+    box-shadow: 0px 3px 7px 1px #eee;
+}
+
+.login-user {
+    margin-right: 20px;
+}
+
+.logout {
+    cursor: pointer;
+}

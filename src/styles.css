@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 html,
 body {
     background: #f4f4f4;
@@ -8,8 +7,6 @@ body {
     height: 100%;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
-
 
 mat-card.mat-card.mat-focus-indicator {
     width: 200px;
@@ -26,4 +23,17 @@ mat-card.mat-card.mat-focus-indicator {
 
 .dashboard-wrapper {
     padding: 20px;
+}
+
+.module-title {
+    margin: 20px;
+    background: #4d5571;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.table-wrapper {
+    padding: 0 20px;
 }

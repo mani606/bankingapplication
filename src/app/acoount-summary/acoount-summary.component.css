@@ -1,0 +1,48 @@
+.account-summary-wrapper {
+    background: #fff;
+    margin: 20px;
+}
+
+.details {
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.label {
+    color: #8d8d8d;
+    margin-right: 0px;
+    font-size: 14px;
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.seperator {
+    float: right;
+    margin-right: 60px;
+}
+
+.value {
+    font-size: 14px;
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.balance-details {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.account-title {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.balance {
+    font-size: 28px;
+    color: green;
+}
