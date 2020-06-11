@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/service/api/data.service';
+import { environment } from 'src/environments/environment';
+import {MatTableDataSource} from '@angular/material/table';
 
 @Component({
   selector: 'app-transactions',
@@ -6,26 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./transactions.component.css']
 })
 export class TransactionsComponent implements OnInit {
+  baseUrl: string = `${environment.baseUrl}/transitions`;
+  constructor(private dateService: DataService) { }
 
-  constructor() { }
-  accounts =[
-    {
-      'accountName': "Test",
-      'accountNumber': 123456,
-      'bank': "AMP",
-      "amount": 200,
-      "date": "22/02/2020"
-    },{
-      'accountName': "Test",
-      'accountNumber': 123456,
-      'bank': "AMP",
-      "amount": 200,
-      "date": "22/02/2020"
-    }
-  ]
-  displayedColumns: string[] = ['accountName', 'accountNumber', 'bank','amount','date'];
-  dataSource = this.accounts;
+  displayedColumns: string[] = ['accountName', 'accountNumber', 'bank','amount','transitionType','date'];
+  dataSource : any;
   ngOnInit(): void {
+    let email = sessionStorage.getItem('email')
+    this.dateService.getDataByUser(this.baseUrl,email).subscribe(data => {
+      this.dataSource = new MatTableDataSource();
+      this.dataSource.data = data;
+        console.log(data)
+    })
   }
 
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/service/api/data.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-acoount-summary',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acoount-summary.component.css']
 })
 export class AcoountSummaryComponent implements OnInit {
-
-  constructor() { }
+  userUrl: string = `${environment.baseUrl}/users`;
+  email = sessionStorage.getItem('email');
+  accountDetails;
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.dataService.getDataByUser(this.userUrl,this.email).subscribe(data => {
+       this.accountDetails = data[0].account[0];
+       console.log(this.accountDetails);
+    })
   }
 
 }
