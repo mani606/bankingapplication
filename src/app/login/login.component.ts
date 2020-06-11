@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 //import { FormBuilder, FormControl,Validator, Validators} from '@angular/forms';
 import { FormGroup, FormBuilder,Validators, FormArray } from '@angular/forms';
+import { Router } from '@angular/router'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,20 +9,16 @@ import { FormGroup, FormBuilder,Validators, FormArray } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   loginForm;
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder,private router:Router) { }
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
       userName: ['',[Validators.required,Validators.email]],
       password: ['',Validators.required]
     })
-     /* this.loginForm = this.fb.group({
-       userName: ['',Validators.required],
-       password: ['',[Validators.required,Validators.email]]
-     }) */
   }
   login() {
-
+    this.router.navigate(['dashboard'])
   }
 
 }
