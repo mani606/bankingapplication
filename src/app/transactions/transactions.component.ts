@@ -19,7 +19,8 @@ export class TransactionsComponent implements OnInit {
     this.dateService.getDataByUser(this.baseUrl,email).subscribe(data => {
       this.dataSource = new MatTableDataSource();
       this.dataSource.data = data;
-        console.log(data)
+        console.log(data);
+       
     })
   }
 

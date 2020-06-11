@@ -76,7 +76,6 @@ export class FundTransferComponent implements OnInit {
           })
          
         }
- 
    
       console.log(addingAmount)
     })

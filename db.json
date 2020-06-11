@@ -163,6 +163,36 @@
       "transitionType": "Debited",
       "date": "11/6/2020 @ 20:40:10",
       "id": 6
+    },
+    {
+      "accountName": "Jhon",
+      "accountNumber": "987654321",
+      "bank": "HDFC",
+      "email": "mani.sri@gmail.com",
+      "amount": "2000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 21:51:13",
+      "id": 7
+    },
+    {
+      "accountName": "Shanker",
+      "accountNumber": "123456789",
+      "bank": "AXIS",
+      "email": "mani.sri@gmail.com",
+      "amount": "3000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 21:51:39",
+      "id": 8
+    },
+    {
+      "accountName": "Shanker",
+      "accountNumber": "123456789",
+      "bank": "AXIS",
+      "email": "mani.sri@gmail.com",
+      "amount": "4000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 21:52:16",
+      "id": 9
     }
   ]
 }
