@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fund-transfer.component.css']
 })
 export class FundTransferComponent implements OnInit {
-
+  sendMoneyFlag: Boolean = false;
   constructor() { }
   accounts =[
     {
@@ -23,5 +23,10 @@ export class FundTransferComponent implements OnInit {
   dataSource = this.accounts;
   ngOnInit(): void {
   }
-
+  showSendMoney() {
+    this.sendMoneyFlag = true;
+  }
+  hideSendMoney(){
+    this.sendMoneyFlag = false;
+  }
 }

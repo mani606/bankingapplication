@@ -11,17 +11,23 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AcoountSummaryComponent } from './acoount-summary/acoount-summary.component';
 import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { HeaderComponent } from './header/header.component';
+import { MatIconModule } from '@angular/material/icon'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
     AcoountSummaryComponent,
-    FundTransferComponent
+    FundTransferComponent,
+    TransactionsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,9 @@ import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatGridListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

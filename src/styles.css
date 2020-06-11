@@ -24,3 +24,16 @@ mat-card.mat-card.mat-focus-indicator {
 .dashboard-wrapper {
     padding: 20px;
 }
+
+.module-title {
+    margin: 20px;
+    background: #4d5571;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.table-wrapper {
+    padding: 0 20px;
+}
