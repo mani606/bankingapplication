@@ -21,7 +21,7 @@ export class HighlightDirective {
    * @description This method will be called on mouseLeave
    */
   @HostListener('mouseleave') onMouseLeave() {
-    this.highlight(this.highlightColor || '87CEFA');
+    this.highlight(this.highlightColor || '#87CEFA');
   }
 
   private highlight(color: string) {
