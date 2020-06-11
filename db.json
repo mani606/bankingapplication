@@ -69,39 +69,18 @@
   ],
   "beneficiaryaccounts": [
     {
-      "accountName": "Mani Sri",
-      "accountNumber": "123456789",
+      "accountName": "test",
+      "accountNumber": "99999999",
       "bank": "ICICI",
-      "accountId": 1,
-      "email": "mani.sri@gmail.com"
+      "email": "mani.sri@gmail.com",
+      "id": 1
     },
     {
-      "accountName": "Jhon",
-      "accountNumber": "987654321",
+      "accountName": "Mani",
+      "accountNumber": "93839839383",
       "bank": "HDFC",
-      "accountId": 2,
-      "email": "mani.sri@gmail.com"
-    },
-    {
-      "accountName": "Akhil",
-      "accountNumber": "8678474849",
-      "bank": "ICICI",
-      "accountId": 3,
-      "email": "mani.sri@gmail.com"
-    },
-    {
-      "accountName": "Swetha",
-      "accountNumber": "84847383839",
-      "bank": "SBI",
-      "accountId": 4,
-      "email": "mani.sri@gmail.com"
-    },
-    {
-      "accountName": "Shanker",
-      "accountNumber": "123456789",
-      "bank": "AXIS",
-      "accountId": 5,
-      "email": "mani.sri@gmail.com"
+      "email": "mani.sri@gmail.com",
+      "id": 2
     }
   ],
   "transitions": [
@@ -165,34 +144,14 @@
       "id": 6
     },
     {
-      "accountName": "Jhon",
-      "accountNumber": "987654321",
-      "bank": "HDFC",
+      "accountName": "test",
+      "accountNumber": "99999999",
+      "bank": "ICICI",
       "email": "mani.sri@gmail.com",
-      "amount": "2000",
+      "amount": "10000",
       "transitionType": "Debited",
-      "date": "11/6/2020 @ 21:51:13",
+      "date": "11/6/2020 @ 21:58:20",
       "id": 7
-    },
-    {
-      "accountName": "Shanker",
-      "accountNumber": "123456789",
-      "bank": "AXIS",
-      "email": "mani.sri@gmail.com",
-      "amount": "3000",
-      "transitionType": "Debited",
-      "date": "11/6/2020 @ 21:51:39",
-      "id": 8
-    },
-    {
-      "accountName": "Shanker",
-      "accountNumber": "123456789",
-      "bank": "AXIS",
-      "email": "mani.sri@gmail.com",
-      "amount": "4000",
-      "transitionType": "Debited",
-      "date": "11/6/2020 @ 21:52:16",
-      "id": 9
     }
   ]
 }

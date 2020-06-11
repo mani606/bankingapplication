@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="module-title">Add Beneficiary</div>
+<div class="main-wrapper">
+    <form [formGroup]="beneficiaryForm" (ngSubmit)="addBenefis()">
+        <div class="input-wrapper">
+            <mat-form-field class="example-full-width">
+                <mat-label>Account Name</mat-label>
+                <input matInput formControlName="accountName" placeholder=" Account Name">
+                <mat-error>Account name is
+                    <Strong> required</Strong>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="input-wrapper">
+            <mat-form-field class="example-full-width">
+                <mat-label>Account Number</mat-label>
+                <input matInput formControlName="accountNumber" placeholder="Account Number">
+                <mat-error>Account Number is
+                    <Strong> required</Strong>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="input-wrapper">
+            <mat-form-field class="example-full-width">
+                <mat-label>Bank</mat-label>
+                <input matInput formControlName="bank" placeholder="Bank">
+                <mat-error>Bank is
+                    <Strong> required</Strong>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-buttons">
+            <button mat-raised-button color="primary">
+           Add</button>
+        </div>
+    </form>
+</div>
