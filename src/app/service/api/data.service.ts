@@ -24,7 +24,7 @@ export class DataService {
     * @param url,email
     */
     getDataByUser = (url,email) => {
-      return this.http.get(url+"?userEmail="+email);
+      return this.http.get(url+"?email="+email);
       }
       /**
     * @description This method add data 

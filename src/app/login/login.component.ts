@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
    // this.router.navigate(['dashboard'])
  
   this.dataService.validateLogin(this.baseUrl,this.loginForm.get('userName').value,this.loginForm.get('password').value).subscribe((response:Array<any>)=>{
-    sessionStorage.setItem("email",response[0].userName);
+    sessionStorage.setItem("email",response[0].email);
     let responseArrayLength = response.length;
     if(responseArrayLength===1)
     {

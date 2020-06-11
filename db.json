@@ -3,43 +3,166 @@
     {
       "id": 1,
       "userName": "mani",
-      "email": "mani@gmail.com",
-       "gender":"female",
-       "password":"Manisri@123",
-       "mobileNumber":9121356782,
-       "address":"Kphb,Hyderabad"
-
+      "email": "mani.sri@gmail.com",
+      "gender": "female",
+      "password": "Manisri@123",
+      "mobileNumber": 9121456782,
+      "address": "Kphb,Hyderabad",
+      "account": [
+        {
+          "accHolderName": "manii",
+          "accName": "HDFC Bank",
+          "accNumber": 456782125925,
+          "userId": 1,
+          "branch": "Hyderabad",
+          "isActive": "YES",
+          "openingBalance": 10000,
+          "availableBalance": 230000,
+          "ifsc": "IFS00003839"
+        }
+      ]
     },
     {
       "id": 2,
-      "userName": "akhila",
-      "email": "akhila@gmail.com",
-       "gender":"female",
-       "password":"Akhila@123",
-       "mobileNumber":9121456742,
-       "address":"Uppal,Hyderabad"
-
+      "userName": "jay",
+      "email": "jay.dev@gmail.com",
+      "gender": "male",
+      "password": "Jay@123",
+      "mobileNumber": 9121455224,
+      "address": "Kphb,Hyderabad",
+      "account": [
+        {
+          "accHolderName": "jay",
+          "accName": "HDFC Bank",
+          "accNumber": 456782125325,
+          "userId": 2,
+          "branch": "Hyderabad",
+          "isActive": "YES",
+          "openingBalance": 10000,
+          "availableBalance": 20000,
+          "ifsc": "IFS00003833"
+        }
+      ]
     },
     {
       "id": 3,
-      "userName": "Navaneeth",
-      "email": "navaneeth@gmail.com",
-       "gender":"male",
-       "password":"Nav@123",
-       "mobileNumber":9125456742,
-       "address":"Uppal,Hyderabad"
-
+      "userName": "harini",
+      "email": "hari@gmail.com",
+      "gender": "female",
+      "password": "Hari@123",
+      "mobileNumber": 9121454782,
+      "address": "Uppal,Hyderabad",
+      "account": [
+        {
+          "accHolderName": "harini",
+          "accName": "HDFC Bank",
+          "accNumber": 456782125,
+          "userId": 3,
+          "branch": "Hyderabad",
+          "isActive": "YES",
+          "openingBalance": 10000,
+          "availableBalance": 140000,
+          "ifsc": "IFS00003835"
+        }
+      ]
+    }
+  ],
+  "beneficiaryaccounts": [
+    {
+      "accountName": "Mani Sri",
+      "accountNumber": "123456789",
+      "bank": "ICICI",
+      "accountId": 1,
+      "email": "mani.sri@gmail.com"
     },
     {
-      "id": 4,
-      "userName": "prasad",
-      "email": "prasad@gmail.com",
-       "gender":"male",
-       "password":"Prasad@123",
-       "mobileNumber":9124456742,
-       "address":"Uppal,Hyderabad"
-
+      "accountName": "Jhon",
+      "accountNumber": "987654321",
+      "bank": "HDFC",
+      "accountId": 2,
+      "email": "mani.sri@gmail.com"
+    },
+    {
+      "accountName": "Akhil",
+      "accountNumber": "8678474849",
+      "bank": "ICICI",
+      "accountId": 3,
+      "email": "mani.sri@gmail.com"
+    },
+    {
+      "accountName": "Swetha",
+      "accountNumber": "84847383839",
+      "bank": "SBI",
+      "accountId": 4,
+      "email": "mani.sri@gmail.com"
+    },
+    {
+      "accountName": "Shanker",
+      "accountNumber": "123456789",
+      "bank": "AXIS",
+      "accountId": 5,
+      "email": "mani.sri@gmail.com"
     }
-      
+  ],
+  "transitions": [
+    {
+      "accountName": "Mani Sri",
+      "accountNumber": "123456789",
+      "bank": "ICICI",
+      "email": "mani.sri@gmail.com",
+      "amount": "1000",
+      "date": "11/6/2020 @ 20:4:3",
+      "id": 1
+    },
+    {
+      "accountName": "Akhil",
+      "accountNumber": "8678474849",
+      "bank": "ICICI",
+      "email": "mani.sri@gmail.com",
+      "amount": "1000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 20:9:40",
+      "id": 2
+    },
+    {
+      "accountName": "Mani Sri",
+      "accountNumber": "123456789",
+      "bank": "ICICI",
+      "email": "mani.sri@gmail.com",
+      "amount": "3000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 20:30:17",
+      "id": 3
+    },
+    {
+      "accountName": "Mani Sri",
+      "accountNumber": "123456789",
+      "bank": "ICICI",
+      "email": "mani.sri@gmail.com",
+      "amount": "10000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 20:35:21",
+      "id": 4
+    },
+    {
+      "accountName": "Mani Sri",
+      "accountNumber": "123456789",
+      "bank": "ICICI",
+      "email": "mani.sri@gmail.com",
+      "amount": "1000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 20:39:10",
+      "id": 5
+    },
+    {
+      "accountName": "Mani Sri",
+      "accountNumber": "123456789",
+      "bank": "ICICI",
+      "email": "mani.sri@gmail.com",
+      "amount": "1000",
+      "transitionType": "Debited",
+      "date": "11/6/2020 @ 20:40:10",
+      "id": 6
+    }
   ]
 }
