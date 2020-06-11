@@ -3,58 +3,43 @@
     {
       "id": 1,
       "userName": "mani",
-      "email": "mani.sri@gmail.com",
+      "email": "mani@gmail.com",
        "gender":"female",
        "password":"Manisri@123",
-       "mobileNumber":9121456782,
-       "address":"Kphb,Hyderabad",
-       "account" :[
-        {
-          "accHolderName":"manii",
-          "accName":"HDFC Bank",
-          "accNumber":456782125925,
-          "userId":1,
-          "openingBalance":10000
-        }
-      ]
+       "mobileNumber":9121356782,
+       "address":"Kphb,Hyderabad"
+
     },
     {
       "id": 2,
-      "userName": "jay",
-      "email": "jay.dev@gmail.com",
-       "gender":"male",
-       "password":"Jay@123",
-       "mobileNumber":9121455224,
-       "address":"Kphb,Hyderabad",
-       "account" :[
-        {
-          "accHolderName":"jay",
-          "accName":"HDFC Bank",
-          "accNumber":456782125325,
-          "userId":2,
-          "openingBalance":10000
-        }
-      ]
+      "userName": "akhila",
+      "email": "akhila@gmail.com",
+       "gender":"female",
+       "password":"Akhila@123",
+       "mobileNumber":9121456742,
+       "address":"Uppal,Hyderabad"
+
     },
     {
       "id": 3,
-      "userName": "harini",
-      "email": "hari@gmail.com",
-       "gender":"female",
-       "password":"Hari@123",
-       "mobileNumber":9121454782,
-       "address":"Uppal,Hyderabad",
+      "userName": "Navaneeth",
+      "email": "navaneeth@gmail.com",
+       "gender":"male",
+       "password":"Nav@123",
+       "mobileNumber":9125456742,
+       "address":"Uppal,Hyderabad"
 
-
-       "account" :[
+    },
     {
-      "accHolderName":"harini",
-      "accName":"HDFC Bank",
-      "accNumber":456782125,
-      "userId":3,
-      "openingBalance":10000
+      "id": 4,
+      "userName": "prasad",
+      "email": "prasad@gmail.com",
+       "gender":"male",
+       "password":"Prasad@123",
+       "mobileNumber":9124456742,
+       "address":"Uppal,Hyderabad"
+
     }
-  ]
-}
+      
   ]
 }

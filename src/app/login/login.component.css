@@ -5,6 +5,7 @@
     padding: 20px;
     margin: 180px auto;
     box-shadow: 0px 0px 25px -2px #eeeeee;
+    
 }
 .example-full-width{
     width:280px;
@@ -23,7 +24,13 @@
 .title{
     text-align: center;
 }
-h1{
+h2{
     text-align: center;
     color:#0000ff;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;;
+    color:#ff0000;
 }
