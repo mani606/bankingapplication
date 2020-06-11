@@ -33,8 +33,8 @@ export class LoginComponent implements OnInit {
     
    // this.router.navigate(['dashboard'])
  
-  this.dataService.validateLogin(this.baseUrl,this.model.email,this.model.password).subscribe((response:Array<any>)=>{
-    sessionStorage.setItem("email",this.model.email);
+  this.dataService.validateLogin(this.baseUrl,this.loginForm.get('userName').value,this.loginForm.get('password').value).subscribe((response:Array<any>)=>{
+    sessionStorage.setItem("email",response[0].userName);
     let responseArrayLength = response.length;
     if(responseArrayLength===1)
     {
