@@ -37,3 +37,9 @@ mat-card.mat-card.mat-focus-indicator {
 .table-wrapper {
     padding: 0 20px;
 }
+
+.logo {
+    float: left;
+    line-height: 15px !important;
+    cursor: pointer;
+}

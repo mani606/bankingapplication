@@ -17,7 +17,7 @@ export class FundTransferComponent implements OnInit {
   email = sessionStorage.getItem('email')
   constructor(private dataService: DataService,private fb: FormBuilder) { }
   accounts;
-  displayedColumns: string[] = ['accountName', 'accountNumber', 'bank','accountId'];
+  displayedColumns: string[] = ['accountName', 'accountNumber', 'bank','id'];
   MyDataSource: any;
   fundForm;
   currentRow;
@@ -40,7 +40,7 @@ export class FundTransferComponent implements OnInit {
   }
   sendMoney(e) {
    
-    let account = this.facAccounts.filter(element => element.accountId == e)[0]
+    let account = this.facAccounts.filter(element => element.id == e)[0]
     let addingAmount = this.fundForm.get('sendAmount').value;
     if(addingAmount != null) {
     this.dataService.getDataByUser(this.userUrl,this.email).subscribe(data => {

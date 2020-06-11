@@ -21,6 +21,7 @@ import { TransactionsComponent } from './transactions/transactions.component';
 import { HeaderComponent } from './header/header.component';
 import { MatIconModule } from '@angular/material/icon';
 import { DataService } from 'src/app/service/api/data.service';
+import { BeneficiaryComponent } from './beneficiary/beneficiary.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { DataService } from 'src/app/service/api/data.service';
     AcoountSummaryComponent,
     FundTransferComponent,
     TransactionsComponent,
-    HeaderComponent
+    HeaderComponent,
+    BeneficiaryComponent
   ],
   imports: [
     BrowserModule,
