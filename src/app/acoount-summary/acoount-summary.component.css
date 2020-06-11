@@ -1,5 +1,5 @@
 .account-summary-wrapper {
-    background: #fff;
+    background: #ffffff;
     margin: 20px;
 }
 
@@ -44,5 +44,5 @@
 
 .balance {
     font-size: 28px;
-    color: green;
+    color: #008000;
 }

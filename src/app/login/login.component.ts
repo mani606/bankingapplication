@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  model: any = {
+ model: any = {
     email: '',
     password: ''
   }
@@ -29,28 +29,30 @@ export class LoginComponent implements OnInit {
   * @description function for login the user
   */
   login() {
-    {
-      this.dataService.validateLogin(this.baseUrl,this.model.email,this.model.password).subscribe((response:Array<any>)=>{
-        sessionStorage.setItem("email",this.model.email);
-        let responseArrayLength = response.length;
-        if(responseArrayLength===1)
-        {
-            this.router.navigate(['/dashboard']);
-            this.loginSuccess = true;
-        }
-        else
-        {      
-            alert("Invalid details");
-        }
-      },
-      (error)=>{
    
-      },
-      ()=>{
-  
-      })
+    
+   // this.router.navigate(['dashboard'])
+ 
+  this.dataService.validateLogin(this.baseUrl,this.model.email,this.model.password).subscribe((response:Array<any>)=>{
+    sessionStorage.setItem("email",this.model.email);
+    let responseArrayLength = response.length;
+    if(responseArrayLength===1)
+    {
+        this.router.navigate(['/dashboard']);
+        this.loginSuccess = true;
     }
-    //this.router.navigate(['dashboard'])
-  }
+    else
+    {      
+        alert("Invalid details");
+    }
+  },
+  (error)=>{
 
+  },
+  ()=>{
+
+  })
 }
+}
+
+    

@@ -13,13 +13,14 @@ import {MatButtonModule} from '@angular/material/button'
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AcoountSummaryComponent } from './acoount-summary/acoount-summary.component';
 import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { HeaderComponent } from './header/header.component';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { DataService } from 'src/app/service/api/data.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,12 +40,13 @@ import { MatIconModule } from '@angular/material/icon'
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
+    HttpClientModule,
     MatCardModule,
     MatTableModule,
     MatGridListModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,7 @@
             
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
-                <input matInput formControlName="userName" placeholder="Enter Email" required>
+                <input matInput formControlName="userName" placeholder="Enter Email" >
                 <mat-error *ngIf="loginForm.get('userName').hasError('email') && !loginForm.get('userName').hasError('required')">
                     Please enter a valid email address
                 </mat-error>
@@ -19,7 +19,7 @@
         <div class="input-wrapper">
             <mat-form-field class="example-full-width">
                 <mat-label>Password</mat-label>
-                <input type="password" matInput formControlName="password" placeholder=" Enter Password" required>
+                <input type="password" matInput formControlName="password" placeholder=" Enter Password" >
                 <mat-error>Password is<Strong> required</Strong></mat-error>
             </mat-form-field>
         </div>
