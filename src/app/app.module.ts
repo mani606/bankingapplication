@@ -9,12 +9,19 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AcoountSummaryComponent } from './acoount-summary/acoount-summary.component';
+import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    AcoountSummaryComponent,
+    FundTransferComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +31,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FormsModule, 
     ReactiveFormsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

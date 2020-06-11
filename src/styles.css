@@ -7,3 +7,20 @@ body {
     height: 100%;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+mat-card.mat-card.mat-focus-indicator {
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.mat-table {
+    background: white;
+    width: 100%;
+}
+
+.dashboard-wrapper {
+    padding: 20px;
+}
