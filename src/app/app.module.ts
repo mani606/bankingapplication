@@ -8,15 +8,22 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+import {MatButtonModule} from '@angular/material/button'
+
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AcoountSummaryComponent } from './acoount-summary/acoount-summary.component';
+import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent,
-    HighlightDirective,
-    LoginComponent
-
+    LoginComponent,
+    DashboardComponent,
+    AcoountSummaryComponent,
+    FundTransferComponent
   ],
   imports: [
     BrowserModule,
@@ -26,8 +33,9 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule, 
     ReactiveFormsModule,
     MatInputModule,
-    MatButtonModule
-
+    MatButtonModule,
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
