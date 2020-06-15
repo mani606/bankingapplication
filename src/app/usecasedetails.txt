@@ -1,0 +1,7 @@
+Fund transfer application
+
+1. Login - User Id, Password - On successfull login -> redirect to Home screen
+2. Display Account Balance, Account Summary
+3. Provide option to transfer amount -> Should be able to show list of accounts/user name and select the user and transfer amount
+4. Show the updated balance from both(sender and recevier account summary)
+5. Transaction details

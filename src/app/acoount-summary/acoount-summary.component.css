@@ -1,13 +1,19 @@
-.account-summary-wrapper {
-    background: #ffffff;
-    margin: 20px;
-}
+/* Add padding to details */
 
 .details {
     display: block;
     width: 100%;
     padding: 0 30px;
 }
+
+/* Add a green text color to fiels */
+
+.balance {
+    font-size: 28px;
+    color: #008000;
+}
+
+/* Set a grey background color and apply the styles */
 
 .label {
     color: #8d8d8d;
@@ -17,7 +23,6 @@
     display: block;
     float: left;
 }
-
 .seperator {
     float: right;
     margin-right: 60px;
@@ -42,7 +47,9 @@
     margin-bottom: 10px;
 }
 
-.balance {
-    font-size: 28px;
-    color: #008000;
+/* Overwrite default styles of field */
+
+.account-summary-wrapper {
+    background: #ffffff;
+    margin: 20px;
 }

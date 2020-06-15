@@ -10,8 +10,8 @@ import { environment } from 'src/environments/environment';
 })
 export class HeaderComponent implements OnInit {
   userUrl: string = `${environment.baseUrl}/users`;
-  email = sessionStorage.getItem('email');
-  accountDetails;
+  email:string= sessionStorage.getItem('email');
+  accountDetails:any;
   constructor(private route: Router,private dataService: DataService) { }
 
   ngOnInit(): void {

@@ -1,17 +1,17 @@
-<h1>Banking Application</h1>
+<h1>Bank</h1>
 <div class="login-container">
-    <h2>Login Details</h2>
+    <h2>Login </h2>
     <form class="example-form" [formGroup]="loginForm" (ngSubmit)="login()">
        
         <div class="input-wrapper">
             
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
-                <input matInput formControlName="userName" placeholder="Enter Email" >
-                <mat-error *ngIf="loginForm.get('userName').hasError('email') && !loginForm.get('userName').hasError('required')">
+                <input matInput formControlName="email" placeholder="Enter Email" >
+                <mat-error *ngIf="loginForm.get('email').hasError('email') && !loginForm.get('email').hasError('required')">
                     Please enter a valid email address
                 </mat-error>
-                <mat-error *ngIf="loginForm.get('userName').hasError('required')">
+                <mat-error *ngIf="loginForm.get('email').hasError('required')">
                     Email is <strong>required</strong>
                 </mat-error>
             </mat-form-field>

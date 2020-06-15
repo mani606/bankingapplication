@@ -4,7 +4,7 @@
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="accountName">
             <th mat-header-cell *matHeaderCellDef> Account Name </th>
-            <td mat-cell *matCellDef="let element"> {{element.accountName}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.accountName|titlecase}} </td>
         </ng-container>
         <ng-container matColumnDef="accountNumber">
             <th mat-header-cell *matHeaderCellDef> Account Number </th>
@@ -12,18 +12,18 @@
         </ng-container>
         <ng-container matColumnDef="bank">
             <th mat-header-cell *matHeaderCellDef> Bank </th>
-            <td mat-cell *matCellDef="let element"> {{element.bank}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.bank|uppercase}} </td>
         </ng-container>
         <ng-container matColumnDef="amount">
-            <th mat-header-cell *matHeaderCellDef> Amount </th>
-            <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+            <th mat-header-cell *matHeaderCellDef> Amount(₹) </th>
+            <td mat-cell *matCellDef="let element"> {{element.amount|currency:'INR'}} </td>
         </ng-container>
         <ng-container matColumnDef="transitionType">
             <th mat-header-cell *matHeaderCellDef> Transition Type</th>
             <td mat-cell *matCellDef="let element"> {{element.transitionType}} </td>
         </ng-container>
         <ng-container matColumnDef="date">
-            <th mat-header-cell *matHeaderCellDef> Dand & Time </th>
+            <th mat-header-cell *matHeaderCellDef> Date & Time </th>
             <td mat-cell *matCellDef="let element"> {{element.date}} </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -9,8 +9,9 @@ import { environment } from 'src/environments/environment';
 })
 export class AcoountSummaryComponent implements OnInit {
   userUrl: string = `${environment.baseUrl}/users`;
-  email = sessionStorage.getItem('email');
-  accountDetails;
+  email:string = sessionStorage.getItem('email');
+  //accountDetails;
+  accountDetails:any;
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {

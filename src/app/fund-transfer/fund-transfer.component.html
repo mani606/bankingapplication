@@ -4,7 +4,7 @@
     <table mat-table [dataSource]="MyDataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="accountName">
             <th mat-header-cell *matHeaderCellDef> Account Name </th>
-            <td mat-cell *matCellDef="let element"> {{element.accountName}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.accountName|titlecase}} </td>
         </ng-container>
         <ng-container matColumnDef="accountNumber">
             <th mat-header-cell *matHeaderCellDef> Account Number </th>
@@ -12,9 +12,13 @@
         </ng-container>
         <ng-container matColumnDef="bank">
             <th mat-header-cell *matHeaderCellDef> Bank </th>
-            <td mat-cell *matCellDef="let element"> {{element.bank}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.bank|uppercase}} </td>
         </ng-container>
-        <ng-container matColumnDef="id" class="actions">
+       <!-- <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef> Bank </th>
+            <td mat-cell *matCellDef="let element"> {{element.email|uppercase}} </td>
+        </ng-container>-->
+                <ng-container matColumnDef="id" class="actions">
             <th mat-header-cell *matHeaderCellDef class="actions">
 
             </th>
@@ -43,4 +47,4 @@
     </table>
 
 </div>
-<div class="add-benificary"> <button mat-raised-button routerLink="/beneficiary" color="primary">Add Beneficiary </button></div>
+<!--<div class="add-benificary"> <button mat-raised-button routerLink="/beneficiary" color="primary">Add Beneficiary </button></div>-->

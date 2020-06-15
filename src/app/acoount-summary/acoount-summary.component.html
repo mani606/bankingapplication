@@ -6,41 +6,53 @@
         <mat-grid-tile>
             <div class="details">
                 <span class="label">Name<span class="seperator">:</span></span>
-                <span class="value">{{accountDetails.accHolderName}}</span>
+                <span class="value">{{accountDetails?.accHolderName|titlecase}}</span>
             </div>
         </mat-grid-tile>
-        <mat-grid-tile rowspan='5'>
+        <mat-grid-tile rowspan='6'>
             <div class="balance-details">
                 <span class="account-title">
-                Balance
+                Balance(₹)
             </span>
                 <span class="balance">
-                {{accountDetails.availableBalance | currency: 'INR':'symbol':'1.0-0'}}
+                {{accountDetails?.availableBalance | currency:'INR'}}
             </span>
             </div>
         </mat-grid-tile>
         <mat-grid-tile>
             <div class="details">
                 <span class="label">Account Number<span class="seperator">:</span></span>
-                <span class="value">{{accountDetails.accNumber}}</span>
+                <span class="value">{{accountDetails?.accNumber}}</span>
             </div>
         </mat-grid-tile>
         <mat-grid-tile>
             <div class="details">
                 <span class="label">Branch<span class="seperator">:</span></span>
-                <span class="value">{{accountDetails.branch}}</span>
+                <span class="value">{{accountDetails?.branch}}</span>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="details">
+                <span class="label">Account Type<span class="seperator">:</span></span>
+                <span class="value">{{accountDetails?.accType}}</span>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="details">
+                <span class="label">Opening Balance<span class="seperator">:</span></span>
+                <span class="value">{{accountDetails?.openingBalance}}</span>
             </div>
         </mat-grid-tile>
         <mat-grid-tile>
             <div class="details">
                 <span class="label">Active<span class="seperator">:</span></span>
-                <span class="value">{{accountDetails.isActive}}</span>
+                <span class="value">{{accountDetails?.isActive}}</span>
             </div>
         </mat-grid-tile>
         <mat-grid-tile>
             <div class="details">
                 <span class="label">IFSC Code<span class="seperator">:</span></span>
-                <span class="value">{{accountDetails.ifsc}}</span>
+                <span class="value">{{accountDetails?.ifsc}}</span>
             </div>
         </mat-grid-tile>
     </mat-grid-list>

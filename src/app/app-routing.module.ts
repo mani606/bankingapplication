@@ -5,7 +5,6 @@ import { AcoountSummaryComponent } from './acoount-summary/acoount-summary.compo
 import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { BeneficiaryComponent } from './beneficiary/beneficiary.component';
-
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
@@ -14,7 +13,14 @@ const routes: Routes = [
   {path: 'summary',component: AcoountSummaryComponent},
   {path: 'fundtranfer',component: FundTransferComponent},
   {path: 'transactions',component: TransactionsComponent},
-  {path: 'beneficiary',component: BeneficiaryComponent}
+  {path: 'beneficiary',component: BeneficiaryComponent},
+  { path: '', redirectTo:"/dashboard",pathMatch:'full' },
+  /*{ 
+    path: 'login',
+    component: LoginComponent,
+    canActivate: [AuthGuard] 
+  },
+  */
 ];
 
 @NgModule({

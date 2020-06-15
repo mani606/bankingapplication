@@ -1,6 +1,9 @@
+/*add background color and padding to form field*/
 .main-wrapper {
-    background: #fff;
+    background: #ffffff;
     margin: 50px auto;
     display: table;
     padding: 30px;
+    width:580px;
+    height:150px;
 }

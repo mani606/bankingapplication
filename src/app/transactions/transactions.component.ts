@@ -11,11 +11,10 @@ import {MatTableDataSource} from '@angular/material/table';
 export class TransactionsComponent implements OnInit {
   baseUrl: string = `${environment.baseUrl}/transitions`;
   constructor(private dateService: DataService) { }
-
-  displayedColumns: string[] = ['accountName', 'accountNumber', 'bank','amount','transitionType','date'];
   dataSource : any;
-  ngOnInit(): void {
-    let email = sessionStorage.getItem('email')
+  displayedColumns: string[] = ['accountName', 'accountNumber', 'bank','amount','transitionType','date'];
+    ngOnInit(): void {
+    let email:string = sessionStorage.getItem('email')
     this.dateService.getDataByUser(this.baseUrl,email).subscribe(data => {
       this.dataSource = new MatTableDataSource();
       this.dataSource.data = data;

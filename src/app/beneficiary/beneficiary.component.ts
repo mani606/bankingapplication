@@ -12,9 +12,9 @@ import { environment } from 'src/environments/environment';
 export class BeneficiaryComponent implements OnInit {
 
   constructor(private dataService: DataService,private fb:FormBuilder,private router:Router) { }
-  beneficiaryForm;
+  beneficiaryForm:FormGroup;
   addBene: string = `${environment.baseUrl}/beneficiaryaccounts`;
-  beneficiaryaccounts
+  beneficiaryaccounts:any;
   ngOnInit(): void {
     this.beneficiaryForm = this.fb.group({
       "accountName": ['',Validators.required],
@@ -23,18 +23,29 @@ export class BeneficiaryComponent implements OnInit {
       "email": ['',Validators.required]
     })
   }
+  /**
+   * @description this method called to add other account details
+   */
   addBenefis() {
-    let benifisObj = {
-      accountName: this.beneficiaryForm.get('accountName').value,
-      accountNumber: this.beneficiaryForm.get('accountNumber').value,
-      bank: this.beneficiaryForm.get('bank').value,
+      let accountName:string = this.beneficiaryForm.get('accountName').value;
+    let accountNumber:number = this.beneficiaryForm.get('accountNumber').value;
+    let bank :any = this.beneficiaryForm.get('bank').value;
+   if(accountName && accountNumber && bank) {
+    let benifisObj:any = {
+      accountName,
+      accountNumber,
+      bank,
+      availableBalance: 10000,
       email : sessionStorage.getItem('email'),
     }
+    
     console.log(benifisObj);
     this.dataService.addData(this.addBene,benifisObj).subscribe(data => {
       console.log(data);
+      alert("Benificiary added successfully")
       this.router.navigate(['fundtranfer'])
     });
+  }
   }
 
 }
